@@ -1,0 +1,941 @@
+/* Project Details Page Styles */
+:root {
+    --section-spacing: 4rem;
+    --card-spacing: 2rem;
+    --border-radius: 12px;
+}
+
+/* Navigation */
+nav {
+    background: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid rgba(0, 168, 255, 0.1);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--accent-blue);
+}
+
+.project-nav-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--accent-blue);
+}
+
+/* Project Header */
+.project-header {
+    background: linear-gradient(to bottom, rgba(0, 168, 255, 0.1), transparent);
+    padding: 4rem 2rem;
+    margin-bottom: var(--section-spacing);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.title-section {
+    text-align: left;
+    margin-bottom: 2rem;
+    float: left;
+    clear: both;
+}
+
+.title-section h1 {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    color: var(--accent-blue);
+    margin: 0 0 0.5rem 0;
+    line-height: 1;
+}
+
+.title-section h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.project-meta {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    clear: both;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.status.active {
+    background: rgba(0, 255, 157, 0.1);
+    color: var(--success-green);
+    border: 1px solid rgba(0, 255, 157, 0.2);
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: rgba(0, 168, 255, 0.1);
+    color: var(--accent-blue);
+    text-decoration: none;
+    border: 1px solid rgba(0, 168, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: rgba(0, 168, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Project Sections */
+.project-section {
+    max-width: 1200px;
+    margin: 0 auto var(--section-spacing);
+    padding: 0 2rem;
+}
+
+.project-section h3 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--accent-blue);
+}
+
+.project-section h4 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+/* Architecture Section */
+.architecture-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--card-spacing);
+}
+
+.architecture-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.architecture-details li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.architecture-details li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+}
+
+/* Implementation Section */
+.implementation-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--card-spacing);
+}
+
+.detail-card {
+    background: rgba(26, 26, 26, 0.6);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 168, 255, 0.1);
+}
+
+.detail-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-card li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.detail-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+}
+
+/* Technologies Section */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--card-spacing);
+}
+
+.tech-category {
+    background: rgba(26, 26, 26, 0.6);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 168, 255, 0.1);
+}
+
+.tech-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tech-category li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+/* Full Project Content Section */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: var(--card-spacing);
+}
+
+.content-section {
+    background: rgba(26, 26, 26, 0.6);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 168, 255, 0.1);
+}
+
+.content-section h4 {
+    color: var(--accent-blue);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 168, 255, 0.1);
+}
+
+.content-section h5 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-display);
+}
+
+.documentation-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: rgba(0, 168, 255, 0.02);
+    border: 1px dashed rgba(0, 168, 255, 0.2);
+    border-radius: var(--border-radius);
+}
+
+.documentation-placeholder i {
+    font-size: 2.5rem;
+    color: var(--accent-blue);
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.documentation-placeholder p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-section {
+        padding: 1.5rem;
+    }
+    
+    .content-section h4 {
+        font-size: 1.2rem;
+    }
+    
+    .content-section h5 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .project-header {
+        padding: 2rem 1rem;
+    }
+
+    .project-header h1 {
+        font-size: 2rem;
+    }
+
+    .project-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .project-section {
+        padding: 0 1rem;
+    }
+
+    .project-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-section h4 {
+        font-size: 1.2rem;
+    }
+
+    .architecture-details,
+    .implementation-details,
+    .tech-grid,
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-content {
+        padding: 0 1rem;
+    }
+}
+
+/* Overview Content Styles */
+.overview-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.overview-content h4 {
+    color: var(--accent-blue);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-display);
+}
+
+.overview-content h5 {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    font-family: var(--font-display);
+}
+
+.system-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.system-list li {
+    background: rgba(26, 26, 26, 0.6);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 168, 255, 0.1);
+}
+
+.system-list strong {
+    display: block;
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.system-list span {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.overview-conclusion {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 168, 255, 0.05);
+    border-radius: var(--border-radius);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Setup Steps Styles */
+.setup-steps {
+    display: grid;
+    gap: 2rem;
+}
+
+.step {
+    background: rgba(26, 26, 26, 0.6);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 168, 255, 0.1);
+}
+
+.step h6 {
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-display);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.step h6 i {
+    font-size: 1rem;
+}
+
+.step p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.step ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.step ul li {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.step ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .system-list {
+        gap: 1rem;
+    }
+
+    .system-list li {
+        padding: 1rem;
+    }
+
+    .step {
+        padding: 1rem;
+    }
+
+    .step h6 {
+        font-size: 1rem;
+    }
+}
+
+/* Network Diagram Styles */
+.network-diagram {
+    margin-top: 3rem;
+    background: rgba(26, 26, 26, 0.6);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 168, 255, 0.1);
+    overflow: hidden;
+}
+
+.diagram-container {
+    padding: 2rem;
+    background: rgba(0, 168, 255, 0.02);
+    border-bottom: 1px solid rgba(0, 168, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.architecture-image {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease;
+}
+
+.diagram-container:hover .architecture-image {
+    transform: scale(1.02);
+}
+
+.diagram-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(10, 10, 10, 0.9), transparent);
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.diagram-container:hover .diagram-overlay {
+    opacity: 1;
+}
+
+.diagram-caption {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-primary);
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+}
+
+.diagram-caption i {
+    color: var(--accent-blue);
+    font-size: 1.4rem;
+}
+
+.zoom-icon {
+    margin-left: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.zoom-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90vh;
+    animation: zoom 0.3s ease;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+
+.close-modal {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: var(--text-primary);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: var(--accent-blue);
+}
+
+.architecture-image {
+    cursor: pointer;
+}
+
+.diagram-explanation {
+    padding: 2rem;
+}
+
+.diagram-explanation h6 {
+    color: var(--accent-blue);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-display);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.component-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.component {
+    background: rgba(0, 168, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 168, 255, 0.1);
+}
+
+.component h7 {
+    display: block;
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    font-family: var(--font-display);
+}
+
+.component p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.component ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.component ul li {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.component ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+}
+
+.network-features {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 168, 255, 0.1);
+}
+
+.network-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.network-features ul li {
+    color: var(--text-secondary);
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.network-features ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+}
+
+/* Mobile Responsiveness for Network Diagram */
+@media (max-width: 768px) {
+    .diagram-container {
+        padding: 1rem;
+    }
+
+    .diagram-explanation {
+        padding: 1.5rem;
+    }
+
+    .component-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .network-features ul {
+        grid-template-columns: 1fr;
+    }
+
+    .diagram-explanation h6 {
+        font-size: 1.1rem;
+    }
+
+    .component h7 {
+        font-size: 1rem;
+    }
+}
+
+/* Network Architecture Section */
+.network-architecture {
+    background: rgba(26, 26, 26, 0.6);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 168, 255, 0.1);
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.architecture-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.architecture-visual {
+    position: relative;
+}
+
+.diagram-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    background: rgba(0, 168, 255, 0.02);
+    border: 1px solid rgba(0, 168, 255, 0.1);
+    padding: 1rem;
+}
+
+.architecture-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.zoom-hint {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(10, 10, 10, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.zoom-hint i {
+    color: var(--accent-blue);
+}
+
+.zoom-hint span {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+.diagram-wrapper:hover .zoom-hint {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.diagram-wrapper:hover .architecture-image {
+    transform: scale(1.02);
+}
+
+/* Modal Refinements */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(5px);
+}
+
+.modal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    background: rgba(10, 10, 10, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 168, 255, 0.1);
+}
+
+.modal-header h4 {
+    color: var(--accent-blue);
+    margin: 0;
+    font-family: var(--font-display);
+}
+
+.modal-body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 50px rgba(0, 168, 255, 0.1);
+    animation: zoomIn 0.3s ease;
+}
+
+.modal-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    background: rgba(10, 10, 10, 0.8);
+    text-align: center;
+    border-top: 1px solid rgba(0, 168, 255, 0.1);
+}
+
+.zoom-instructions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.zoom-instructions i {
+    color: var(--accent-blue);
+    margin-right: 0.5rem;
+}
+
+.close-modal {
+    color: var(--text-primary);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: var(--accent-blue);
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Architecture Details */
+.architecture-details {
+    display: grid;
+    gap: 2rem;
+}
+
+.arch-section {
+    background: rgba(0, 168, 255, 0.02);
+    border: 1px solid rgba(0, 168, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+}
+
+.arch-section h4 {
+    color: var(--accent-blue);
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    margin: 0 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.arch-section h4 i {
+    font-size: 1rem;
+}
+
+.arch-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.arch-section li {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.4;
+}
+
+.arch-section li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .architecture-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .architecture-details {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .network-architecture {
+        padding: 1rem;
+    }
+    
+    .architecture-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .zoom-instructions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .modal-header,
+    .modal-footer {
+        padding: 0.75rem 1rem;
+    }
+} 
