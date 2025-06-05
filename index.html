@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cybersecurity Portfolio</title>
+    
+    <!-- Critical CSS -->
+    <style>
+        /* Inline critical CSS for faster initial render */
+        body { margin: 0; background: #0a0a0a; color: #ffffff; }
+        .nav { position: fixed; top: 0; width: 100%; z-index: 1000; }
+        .background-fallback { position: fixed; width: 100%; height: 100%; z-index: -1; }
+    </style>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    
+    <!-- Async CSS loading -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Fonts: Load only what's needed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Optimized background -->
+    <div class="background-fallback"></div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">&lt;/&gt; Ihfaz's Cybersecurity Portfolio</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="title-3d-container">
+                    <h1 class="cyber-title">
+                        <span class="title-layer" data-text="Welcome to My">Welcome to My</span>
+                        <span class="title-main" data-text="Cybersecurity">Cybersecurity</span>
+                        <span class="title-layer" data-text="Portfolio">Portfolio</span>
+                        <div class="title-glitch"></div>
+                        <div class="cyber-scanner"></div>
+                    </h1>
+                </div>
+                <p class="subtitle">Certifications | Skills | Projects</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="cta-primary">
+                        Get In Touch
+                        <div class="glitch"></div>
+                    </a>
+                    <a href="#projects" class="cta-secondary">
+                        View Projects
+                        <div class="glitch"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications">
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card completed">
+                    <i class="fas fa-certificate"></i>
+                    <h3>AZ-900</h3>
+                    <p class="cert-title">Microsoft Azure Fundamentals</p>
+                    <p class="cert-issuer">Microsoft</p>
+                    <p class="cert-domain">Cloud Computing</p>
+                    <p class="cert-description">Foundational knowledge of cloud services and how those services are provided with Microsoft Azure.</p>
+                    <span class="status">Earned</span>
+                </div>
+                <div class="cert-card completed">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>SC-900</h3>
+                    <p class="cert-title">Microsoft Security, Compliance, and Identity Fundamentals</p>
+                    <p class="cert-issuer">Microsoft</p>
+                    <p class="cert-domain">Security & Compliance</p>
+                    <p class="cert-description">Fundamentals of security, compliance, and identity across cloud-based and related Microsoft services.</p>
+                    <span class="status">Earned</span>
+                </div>
+                <div class="cert-card completed">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>N10-009</h3>
+                    <p class="cert-title">CompTIA Network+</p>
+                    <p class="cert-issuer">CompTIA</p>
+                    <p class="cert-domain">Networking</p>
+                    <p class="cert-description">Essential networking concepts, network security, and troubleshooting network issues.</p>
+                    <span class="status">Earned</span>
+                </div>
+                <div class="cert-card completed">
+                    <i class="fas fa-lock"></i>
+                    <h3>SY0-701</h3>
+                    <p class="cert-title">CompTIA Security+</p>
+                    <p class="cert-issuer">CompTIA</p>
+                    <p class="cert-domain">Cybersecurity</p>
+                    <p class="cert-description">Core cybersecurity skills needed for any cybersecurity role and provides a springboard to intermediate-level cybersecurity jobs.</p>
+                    <span class="status">Earned</span>
+                </div>
+                <div class="cert-card in-progress">
+                    <i class="fas fa-user-secret"></i>
+                    <h3>CEHv13</h3>
+                    <p class="cert-title">Certified Ethical Hacker</p>
+                    <p class="cert-issuer">EC-Council</p>
+                    <p class="cert-domain">Penetration Testing</p>
+                    <p class="cert-description">Ethical hacking techniques and tools to identify vulnerabilities and strengthen security posture.</p>
+                    <span class="status">In Progress</span>
+                </div>
+            </div>
+            <div class="continuous-learning">
+                <div class="learning-content">
+                    <h3>Continuous Learning</h3>
+                    <p>Committed to staying current with evolving cybersecurity threats and technologies through ongoing professional development and industry certifications.</p>
+                    <div class="learning-icons">
+                        <div class="icon-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Professional Development</span>
+                        </div>
+                        <div class="icon-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Evolving Technologies</span>
+                        </div>
+                        <div class="icon-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Threat Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Network Security</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-bug"></i>
+                    <h3>Penetration Testing</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Security</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Cryptography</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Secure Coding</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Threat Analysis</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- LinkedIn Badge Section -->
+        <section class="linkedin-badge-section">
+            <h3>Connect with Me on LinkedIn</h3>
+            <div class="badge-container">
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="ihfaz-mahmud-510008173" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/ihfaz-mahmud-510008173?trk=profile-badge">Ihfaz Mahmud</a></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <a href="project-details.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Home Lab Environment - Building an Enterprise Network</h3>
+                            <div class="project-details">
+                                <div class="project-status">
+                                    <i class="fas fa-server"></i>
+                                    <span>Active Development</span>
+                                </div>
+                                <div class="project-tech">
+                                    <div class="tech-item">
+                                        <i class="fas fa-network-wired"></i>
+                                        <span>Networking</span>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Security</span>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fas fa-cloud"></i>
+                                        <span>Virtualization</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                A comprehensive home lab setup simulating an enterprise network environment for cybersecurity testing and learning. Features include:
+                            </p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check"></i> Network segmentation with VLANs</li>
+                                <li><i class="fas fa-check"></i> Active Directory infrastructure</li>
+                                <li><i class="fas fa-check"></i> IDS/IPS implementation</li>
+                                <li><i class="fas fa-check"></i> Vulnerability scanning environment</li>
+                                <li><i class="fas fa-check"></i> Security monitoring and logging</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span>Networking</span>
+                                <span>Security</span>
+                                <span>Infrastructure</span>
+                                <span>Virtualization</span>
+                                <span>Monitoring</span>
+                            </div>
+                            <div class="view-details">
+                                <span>View Project Details <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Connect With Me</h2>
+            <div class="contact-container">
+                <div class="badge-container">
+                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="ihfaz-mahmud-510008173" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/ihfaz-mahmud-510008173?trk=profile-badge">Ihfaz Mahmud</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cyber Effects -->
+    <canvas id="matrixCanvas" class="background-effect"></canvas>
+    <canvas id="networkCanvas" class="background-effect"></canvas>
+    <div class="cyber-glitch-effect"></div>
+
+    <footer>
+        <p>&copy; 2024 Cybersecurity Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Optimized JavaScript loading -->
+    <script>
+        // Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Matrix Rain Effect
+        const matrixCanvas = document.getElementById('matrixCanvas');
+        const matrixCtx = matrixCanvas.getContext('2d');
+        
+        let matrixWidth = window.innerWidth;
+        let matrixHeight = window.innerHeight;
+        
+        matrixCanvas.width = matrixWidth;
+        matrixCanvas.height = matrixHeight;
+        
+        const matrixCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()";
+        const fontSize = 14;
+        const columns = matrixWidth / fontSize;
+        
+        const drops = [];
+        for (let i = 0; i < columns; i++) {
+            drops[i] = 1;
+        }
+        
+        function drawMatrix() {
+            matrixCtx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            matrixCtx.fillRect(0, 0, matrixWidth, matrixHeight);
+            
+            matrixCtx.fillStyle = "#0F0";
+            matrixCtx.font = fontSize + "px monospace";
+            
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrixCharacters.charAt(Math.floor(Math.random() * matrixCharacters.length));
+                matrixCtx.fillText(text, i * fontSize, drops[i] * fontSize);
+                
+                if (drops[i] * fontSize > matrixHeight && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        // Network Connection Effect
+        const networkCanvas = document.getElementById('networkCanvas');
+        const networkCtx = networkCanvas.getContext('2d');
+        
+        networkCanvas.width = window.innerWidth;
+        networkCanvas.height = window.innerHeight;
+        
+        const particles = [];
+        const particleCount = 50;
+        const connectionDistance = 150;
+        
+        class Particle {
+            constructor() {
+                this.x = Math.random() * networkCanvas.width;
+                this.y = Math.random() * networkCanvas.height;
+                this.vx = (Math.random() - 0.5) * 2;
+                this.vy = (Math.random() - 0.5) * 2;
+                this.radius = 2;
+            }
+            
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                
+                if (this.x < 0 || this.x > networkCanvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > networkCanvas.height) this.vy *= -1;
+            }
+            
+            draw() {
+                networkCtx.beginPath();
+                networkCtx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                networkCtx.fillStyle = "rgba(0, 168, 255, 0.5)";
+                networkCtx.fill();
+            }
+        }
+        
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+        
+        function drawNetwork() {
+            networkCtx.clearRect(0, 0, networkCanvas.width, networkCanvas.height);
+            
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw();
+                
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < connectionDistance) {
+                        networkCtx.beginPath();
+                        networkCtx.moveTo(particles[i].x, particles[i].y);
+                        networkCtx.lineTo(particles[j].x, particles[j].y);
+                        networkCtx.strokeStyle = `rgba(0, 168, 255, ${1 - distance/connectionDistance})`;
+                        networkCtx.stroke();
+                    }
+                }
+            }
+        }
+
+        // Animation Loop
+        function animate() {
+            drawMatrix();
+            drawNetwork();
+            requestAnimationFrame(animate);
+        }
+
+        // Handle Window Resize
+        window.addEventListener('resize', () => {
+            matrixWidth = window.innerWidth;
+            matrixHeight = window.innerHeight;
+            matrixCanvas.width = matrixWidth;
+            matrixCanvas.height = matrixHeight;
+            
+            networkCanvas.width = window.innerWidth;
+            networkCanvas.height = window.innerHeight;
+        });
+
+        // Start Animations
+        animate();
+    </script>
+    
+    <!-- LinkedIn Badge Script -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</body>
+</html> 
